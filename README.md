@@ -1,6 +1,6 @@
 # Grix Protocol: Unifying DeFi Options Liquidity
 
-Welcome to the Grix Protocol, an innovative solution designed to unify liquidity across decentralized finance (DeFi) options markets. Our mission is to create a seamless, efficient, and accessible trading environment for everyone.
+Welcome to the Grix Protocol, an innovative solution designed to unify liquidity across decentralized finance (DeFi) options markets. Our mission is to create a seamless, efficient, and accessible trading environment for everyone. Learn more about us and our vision on our [homepage](https://grix.finance).
 
 ## Dive into the Grix Ecosystem
 
