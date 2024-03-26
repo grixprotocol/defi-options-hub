@@ -1,0 +1,36 @@
+name: Verify and Conditionally Respond PR
+
+on:
+  pull_request:
+    paths:
+      - 'Solvers' Waitlist/*'
+
+jobs:
+  verify-and-respond:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout code
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Use the latest version of Python 3
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Verify New Member File
+        run: python Scripts/verifyNewSolver.py
+
+      - name: Success Message
+        if: success()
+        run: |
+          echo "Verification succeeded. This is where you would normally proceed with deployment."
+
+      - name: Failure Message
+        if: failure()
+        run: |
+          echo "Verification failed. Please check the file and try again."
