@@ -32,12 +32,12 @@ def verify_file(file_path):
     return True, content
 
 
-def send_content_to_backend(content):
-    backend_url = "https://u6udeff7tg.execute-api.us-east-1.amazonaws.com/dev/github"
+def notify_registry(content):
+    registryUrl = "https://u6udeff7tg.execute-api.us-east-1.amazonaws.com/dev/github"
     headers = {"Content-Type": "application/json"}
 
     try:
-        response = requests.post(backend_url, headers=headers, json=content)
+        response = requests.post(registryUrl, headers=headers, json=content)
 
         if response.status_code != 200:
             print(
@@ -66,7 +66,7 @@ def main():
         sys.exit(1)  # Exit with error status to indicate verification failure
 
     # If verification passed, send the content to the backend
-    send_content_to_backend(content)
+    notify_registry(content)
 
     print("Verification succeeded.")
     sys.exit(0)
