@@ -23,7 +23,7 @@ jobs:
           pip install requests
 
       - name: Verify New Member File
-        run: python scripts/verifyNewSolver.py
+        run: python .github/scripts/verifyNewSolver.py
 
       - name: Success Message
         if: success()
