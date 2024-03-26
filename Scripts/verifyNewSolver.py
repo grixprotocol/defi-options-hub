@@ -56,7 +56,7 @@ def notify_registry(content):
 
 
 def main():
-    new_files = glob("Solvers' Waitlist/*")
+    new_files = glob("solvers_waitlist/*")
     if len(new_files) == 0:
         print("No new files to verify.")
         sys.exit(0)  # No files to process, exit normally

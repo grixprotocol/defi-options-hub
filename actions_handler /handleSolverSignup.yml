@@ -3,7 +3,7 @@ name: Verify and Conditionally Respond PR
 on:
   pull_request:
     paths:
-      - 'Solvers' Waitlist/*'
+      - 'solvers_waitlist/*'
 
 jobs:
   verify-and-respond:
@@ -23,7 +23,7 @@ jobs:
           pip install requests
 
       - name: Verify New Member File
-        run: python Scripts/verifyNewSolver.py
+        run: python scripts/verifyNewSolver.py
 
       - name: Success Message
         if: success()
