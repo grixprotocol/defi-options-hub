@@ -33,7 +33,8 @@ def verify_file(file_path):
 
 
 def notify_registry(content):
-    registryUrl = "https://u6udeff7tg.execute-api.us-east-1.amazonaws.com/dev/github"
+    registryUrl = os.getenv('REGISTRY_URL')
+    print(f"Using registry URL: {registryUrl}")
     headers = {"Content-Type": "application/json"}
 
     try:
@@ -55,7 +56,7 @@ def notify_registry(content):
 
 
 def main():
-    new_files = glob('new members/*')
+    new_files = glob("Solvers' Waitlist/*")
     if len(new_files) == 0:
         print("No new files to verify.")
         sys.exit(0)  # No files to process, exit normally
