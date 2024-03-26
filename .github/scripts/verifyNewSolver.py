@@ -48,7 +48,7 @@ def notify_registry(content):
 
         if response.status_code != 200:
             print(
-                f"Failed to send data to backend. Status code: {response.status_code}")
+                f"Failed to send data to backend. Status code: {response.status_code}, full response: {response}")
             sys.exit(1)
         else:
             print("Successfully sent data to backend.")
