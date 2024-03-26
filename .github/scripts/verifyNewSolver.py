@@ -32,6 +32,12 @@ def verify_file(file_path):
     return True, content
 
 
+def get_latest_file(files):
+    latest_file = max(files, key=os.path.getmtime)
+    return latest_file
+
+
+
 def notify_registry(content):
     registryUrl = os.getenv('REGISTRY_URL')
     print(f"Using registry URL: {registryUrl}")
@@ -61,7 +67,7 @@ def main():
         print("No new files to verify.")
         sys.exit(0)  # No files to process, exit normally
 
-    file_path = new_files[0]  # Assuming only one file is added per PR
+    file_path = get_latest_file(new_files)
     verification_passed, content = verify_file(file_path)
     if not verification_passed:
         sys.exit(1)  # Exit with error status to indicate verification failure
