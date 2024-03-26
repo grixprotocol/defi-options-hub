@@ -25,7 +25,7 @@ jobs:
       - name: Verify New Member File
         run: python .github/scripts/verifyNewSolver.py
         env:  
-          REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+          REGISTRY_URL: ${{ env.REGISTRY_URL }}
 
       - name: Success Message
         if: success()
