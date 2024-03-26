@@ -3,14 +3,7 @@ import os
 import re
 import sys
 from glob import glob
-import requests  # Import the requests library
-
-
-# Switch To Typescript.
-# Verify Only One Json
-# Verify Json Keys
-# Split the verify member and update user (Do on PR, Do on merge)
-
+import requests 
 def is_valid_evm_address(address):
     return bool(re.match(r'^0x[a-fA-F0-9]{40}$', address))
 
@@ -21,7 +14,6 @@ def verify_file(file_path):
         print(f"File name {file_name} does not meet the naming convention.")
         return False, None
 
-    # Load and check the JSON content
     with open(file_path, 'r') as file:
         try:
             content = json.load(file)
@@ -41,7 +33,6 @@ def verify_file(file_path):
 
 
 def send_content_to_backend(content):
-    # Replace with your actual backend URL
     backend_url = "https://u6udeff7tg.execute-api.us-east-1.amazonaws.com/dev/github"
     headers = {"Content-Type": "application/json"}
 
@@ -51,17 +42,14 @@ def send_content_to_backend(content):
         if response.status_code != 200:
             print(
                 f"Failed to send data to backend. Status code: {response.status_code}")
-            # Exit with error status to indicate failure in sending data to the backend
             sys.exit(1)
         else:
             print("Successfully sent data to backend.")
 
     except requests.exceptions.ConnectionError as e:
         print(f"Failed to connect to backend. Error: {e}")
-        # Exit with error status to indicate failure in connecting to the backend
         sys.exit(1)
     except requests.exceptions.RequestException as e:
-        # Handles other requests-related exceptions
         print(f"Request failed. Error: {e}")
         sys.exit(1)
 
