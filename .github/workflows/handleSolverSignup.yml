@@ -27,7 +27,7 @@ jobs:
         env:  
           REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
 
-      - name: Add Label to PR
+      - name: Add Label - Verification Passed
         if: success()
         uses: actions/github-script@v5
         with:
@@ -43,7 +43,18 @@ jobs:
              labels: ['contributor-verification-passed']
            });
       
-      - name: Failure Message
+      - name: Add Label - Verification Failed
         if: failure()
-        run: |
-          echo "Verification failed. Please check the file and try again."
+        uses: actions/github-script@v5
+        with:
+         github-token: ${{ secrets.PR_MODIFIER_PAT }}
+         script: |
+           const issue_number = context.payload.pull_request.number;
+           const owner = context.repo.owner;
+           const repo = context.repo.repo;
+           await github.rest.issues.addLabels({
+             owner: owner,
+             repo: repo,
+             issue_number: issue_number,
+             labels: ['contributor-verification-failed']
+           });
