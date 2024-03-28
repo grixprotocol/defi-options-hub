@@ -40,3 +40,6 @@ jobs:
             echo "Processing file: $file"
             python .github/scripts/notify_registry.py "$file"
           done
+        env:  
+          REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+          

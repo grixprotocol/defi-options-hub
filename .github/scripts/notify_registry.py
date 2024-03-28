@@ -5,10 +5,6 @@ import sys
 from glob import glob
 import requests 
 
-def is_valid_evm_address(address):
-    return bool(re.match(r'^0x[a-fA-F0-9]{40}$', address))
-
-
 def get_file_content(file_path):
 
     with open(file_path, 'r') as file:
@@ -20,12 +16,6 @@ def get_file_content(file_path):
             return None
 
     return content
-
-
-def get_latest_file(files):
-    latest_file = max(files, key=os.path.getmtime)
-    return latest_file
-
 
 
 def notify_registry(content):
