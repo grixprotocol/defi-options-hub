@@ -3,7 +3,6 @@ import os
 import re
 import sys
 from glob import glob
-import requests 
 def is_valid_evm_address(address):
     return bool(re.match(r'^0x[a-fA-F0-9]{40}$', address))
 
