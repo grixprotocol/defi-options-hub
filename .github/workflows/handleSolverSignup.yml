@@ -23,9 +23,7 @@ jobs:
           pip install requests
 
       - name: Verify New Member File
-        run: python .github/scripts/verifyNewSolver.py
-        env:  
-          REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+        run: python .github/scripts/verifyNewContributor.py
 
       - name: Add Label - Verification Passed
         if: success()
