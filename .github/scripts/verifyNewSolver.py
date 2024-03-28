@@ -29,36 +29,12 @@ def verify_file(file_path):
             print(f"Missing or empty github handle in file {file_name}.")
             return False, None
 
-    return True, content
+    return True
 
 
 def get_latest_file(files):
     latest_file = max(files, key=os.path.getmtime)
     return latest_file
-
-
-
-def notify_registry(content):
-    registryUrl = os.getenv('REGISTRY_URL')
-    print(f"Using registry URL: {registryUrl}")
-    headers = {"Content-Type": "application/json"}
-
-    try:
-        response = requests.post(registryUrl, headers=headers, json=content)
-
-        if response.status_code != 200:
-            print(
-                f"Failed to send data to backend. Status code: {response.status_code}")
-            sys.exit(1)
-        else:
-            print("Successfully sent data to backend.")
-
-    except requests.exceptions.ConnectionError as e:
-        print(f"Failed to connect to backend. Error: {e}")
-        sys.exit(1)
-    except requests.exceptions.RequestException as e:
-        print(f"Request failed. Error: {e}")
-        sys.exit(1)
 
 
 def main():
@@ -68,12 +44,10 @@ def main():
         sys.exit(0)  # No files to process, exit normally
 
     file_path = get_latest_file(new_files)
-    verification_passed, content = verify_file(file_path)
+    verification_passed = verify_file(file_path)
     if not verification_passed:
         sys.exit(1)  # Exit with error status to indicate verification failure
 
-    # If verification passed, send the content to the backend
-    notify_registry(content)
 
     print("Verification succeeded.")
     sys.exit(0)
