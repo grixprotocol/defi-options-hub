@@ -22,6 +22,6 @@ jobs:
       
       - name: Find and Notify on New JSON Files
         run: |
-          find . -type f -name '*.json' -print0 | xargs -0 -I {} python notify_registry.py "{}"
+          find . -type f -name '*.json' -print0 | xargs -0 -I {} python .github/scripts/notify_registry.py "{}"
         env:
           REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
