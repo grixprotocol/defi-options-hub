@@ -2,7 +2,12 @@ name: Notify Registry on New Files
 
 on:
   workflow_dispatch:
-
+    inputs:
+      prNumber:
+        description: 'Pull Request Number'
+        required: true
+        type: integer
+        
 jobs:
   notify-registry:
     runs-on: ubuntu-latest
@@ -32,7 +37,7 @@ jobs:
         with:
          github-token: ${{ secrets.PR_MODIFIER_PAT }}
          script: |
-           const issue_number = context.payload.pull_request.number;
+           const issue_number = ${{ github.event.inputs.prNumber }};
            const owner = context.repo.owner;
            const repo = context.repo.repo;
            await github.rest.issues.addLabels({
@@ -41,6 +46,7 @@ jobs:
              issue_number: issue_number,
              labels: ['User added']
            });
+
       
       - name: Add Label - Verification Failed
         if: failure()
@@ -48,7 +54,7 @@ jobs:
         with:
          github-token: ${{ secrets.PR_MODIFIER_PAT }}
          script: |
-           const issue_number = context.payload.pull_request.number;
+           const issue_number = ${{ github.event.inputs.prNumber }};
            const owner = context.repo.owner;
            const repo = context.repo.repo;
            await github.rest.issues.addLabels({
