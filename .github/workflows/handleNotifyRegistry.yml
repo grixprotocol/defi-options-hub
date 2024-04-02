@@ -25,3 +25,36 @@ jobs:
           find . -type f -name '*.json' -print0 | xargs -0 -I {} python .github/scripts/notify_registry.py "{}"
         env:
           REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+
+      - name: Add Label - user added
+        if: success()
+        uses: actions/github-script@v5
+        with:
+         github-token: ${{ secrets.PR_MODIFIER_PAT }}
+         script: |
+           const issue_number = context.payload.pull_request.number;
+           const owner = context.repo.owner;
+           const repo = context.repo.repo;
+           await github.rest.issues.addLabels({
+             owner: owner,
+             repo: repo,
+             issue_number: issue_number,
+             labels: ['User added']
+           });
+      
+      - name: Add Label - Verification Failed
+        if: failure()
+        uses: actions/github-script@v5
+        with:
+         github-token: ${{ secrets.PR_MODIFIER_PAT }}
+         script: |
+           const issue_number = context.payload.pull_request.number;
+           const owner = context.repo.owner;
+           const repo = context.repo.repo;
+           await github.rest.issues.addLabels({
+             owner: owner,
+             repo: repo,
+             issue_number: issue_number,
+             labels: ['Add user FAILED']
+           });
+
