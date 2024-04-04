@@ -1,6 +1,6 @@
 # Grix Protocol: Unifying DeFi Options Liquidity
 
-Welcome to the Grix Protocol, an innovative solution designed to unify liquidity across DeFi options markets. Our mission is to create a seamless, efficient, and accessible trading environment for everyone. Learn more about us and our vision on our [homepage](<https://grix.finance>).
+Welcome to Grix Protocol, an innovative solution unifying liquidity across DeFi options markets. Our mission is to create a seamless, efficient, and accessible trading environment with a simple UI and API for all levels of traders. Learn more about Grix and our vision on our [homepage](<https://grix.finance>).
 
 ## Dive into the Grix Ecosystem
 
@@ -8,7 +8,7 @@ For a comprehensive overview of the Grix Protocol, including its architecture, f
 
 ## Grix App: Exploration Mode
 
-Our application is currently in exploration mode, focusing primarily on providing DeFi options information. While the full trading functionalities are under development, this phase allows users to get acquainted with DeFi options and the Grix ecosystem. We appreciate your patience and enthusiasm as we work towards expanding the app's capabilities.
+Our application is currently in an exploration mode, primarily focusing on aggregating DeFi options protocols, prices, and data. While the full trading functionalities are under development, this phase allows users to familiarize themselves with DeFi options and the potential of Grix and its ecosystem. A major part of Grix is its community, and we encourage users to take an active part in our DeFi options community.
 
 ### How to Participate
 
