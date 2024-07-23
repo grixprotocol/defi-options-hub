@@ -8,4 +8,4 @@ Grix API provides access to comprehensive DeFi options trading data and function
 
 ## API Documentation & Examples
 
-For detailed API specifications and request example, visit our [Swagger Documentation](https://external-api-dev.grix.finance/swagger).  
+For detailed API specifications and request example, visit our [API Documentation](https://external-api-dev.grix.finance/docs).  
