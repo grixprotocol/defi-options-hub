@@ -1,11 +1,21 @@
-# Grix API Integration Hub: Your Comprehensive Guide to DeFi Options Trading Integration  
+# Grix API Integration Hub
 
-Welcome to the Grix API Integration Hub. This resource is designed to help developers seamlessly integrate advanced DeFi options trading capabilities into their projects.  
+Welcome to the Grix API Integration Hub, your gateway to advanced DeFi options trading capabilities.
 
-## Introduction  
+## Overview
 
-Grix API provides access to comprehensive DeFi options trading data and functionality. Our API enables developers to build sophisticated trading applications, analytics tools, and more.  
+The Grix API provides developers with tools to integrate DeFi options info and trading functionalities into their applications.
 
-## API Documentation & Examples
+## Getting Started
 
-For detailed API specifications and request example, visit our [API Documentation](https://external-api-dev.grix.finance/docs).  
+1. **API Documentation**: Explore our [API Documentation](https://external-api-dev.grix.finance/docs) for detailed specifications and request examples.
+
+2. **API Key**: [Register here](https://docs.google.com/forms/d/e/1FAIpQLSd_r86A9kCceEaShWnzuy5CIAblyHgMtegR8hc0U-PN8ZqRkQ/viewform) to obtain your API key.
+
+## Support
+
+For technical support or inquiries, please join our Discord's [dev-channel](<https://discord.gg/ku5eKPS2>).
+
+---
+
+Start building powerful DeFi options trading applications with Grix API today!
