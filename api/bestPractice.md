@@ -2,7 +2,7 @@
 
 Welcome to the Grix API Integration Hub, your gateway to advanced DeFi options trading capabilities. This guide will help you understand how to interact with our API endpoints effectively.
 
-## Recommended Flow
+## Recommended Flow for Exploration
 
 1. **Fetch Available Expiries**: Start by querying the expiries endpoint to get all available expiries.
 2. **Fetch Supported Protocols**: Use the supportedProtocols endpoint to retrieve the list of protocols.
