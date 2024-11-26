@@ -1,20 +1,38 @@
 # Grix Asset Map
 
-## 1. Grix Web App
+## 🚀 1. Grix Web App
 
-- 🌐 [Grix Web App](https://app.grix.finance)
-- [Price Comparison](https://app.grix.finance/prices?positionType=long&asset=ETH&optionType=call&tradeType=vanilla): View and compare options prices across DeFi platforms
-- [Options Matrix](https://app.grix.finance/optionsMatrix?asset=BTC&optionType=call): View options prices across DeFi platforms in unified view
-- [Live Arbitrage Updates](https://discord.gg/Qr7cgTru): Join our Discord channel for real-time options arbitrage opportunities
-- [Dashboard](https://app.grix.finance/orders?positionsTableType=Positions&ordersTableType=LiveOrders): View open positions and live orders
+- 🌐 [**Grix Web App**](https://app.grix.finance) - Your gateway to DeFi options trading
+- 📊 [**Price Comparison**](https://app.grix.finance/prices?positionType=long&asset=ETH&optionType=call&tradeType=vanilla)
+  - Compare options prices across multiple DeFi platforms
+  - Find the best rates instantly
+- 📈 [**Options Matrix**](https://app.grix.finance/optionsMatrix?asset=BTC&optionType=call)
+  - Comprehensive unified view of options prices
+  - Easy-to-read format across platforms
+- 💹 [**Live Arbitrage Updates**](https://discord.gg/Qr7cgTru)
+  - Real-time arbitrage opportunities
+  - Join our active Discord community
+- 📱 [**Dashboard**](https://app.grix.finance/orders?positionsTableType=Positions&ordersTableType=LiveOrders)
+  - Track your open positions
+  - Monitor live orders in real-time
 
-## 2. Developer Resources
+## 👨‍💻 2. Developer Resources
 
-- [API Introduction](https://github.com/grixprotocol/defi-options-hub/blob/main/api/README.md): Guide and registration for integrating Grix data
-- [API Documentation](https://external-api-dev.grix.finance/docs): Detailed Grix API for DeFi options data
-- [Integration Status](https://github.com/grixprotocol/defi-options-adapters): Check progress of protocol integrations
-- [Active Integrations](https://app.grix.finance/status): View real-time status of integrated protocols
+- 📖 [**API Introduction**](https://github.com/grixprotocol/defi-options-hub/blob/main/api/README.md)
+  - Comprehensive integration guide
+  - Simple registration process
+- 📚 [**API Documentation**](https://external-api-dev.grix.finance/docs)
+  - Detailed technical specifications
+  - Complete endpoint references
+- 🔄 [**Integration Status**](https://github.com/grixprotocol/defi-options-adapters)
+  - Live protocol integration progress
+  - Regular updates on new additions
+- ✅ [**Active Integrations**](https://app.grix.finance/status)
+  - Real-time protocol status
+  - System health monitoring
 
-## 3. Community & Support
+## 🤝 3. Community & Support
 
-- [X](https://x.com/GrixFinance): Follow @GrixFinance for updates and announcements
+- 🐦 [**Twitter/X**](https://x.com/GrixFinance)
+  - Latest updates and announcements
+  - Join our growing community
