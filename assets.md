@@ -4,8 +4,9 @@
 
 - 🌐 [Grix Web App](https://app.grix.finance)
 - [Price Comparison](https://app.grix.finance/prices?positionType=long&asset=ETH&optionType=call&tradeType=vanilla): View and compare options prices across DeFi platforms
-- [Trading Interface](https://app.grix.finance/trade?positionType=long&asset=ETH&optionType=call&tradeType=vanilla): Execute trades with supported protocols
+- [Options Matrix](https://app.grix.finance/optionsMatrix?asset=BTC&optionType=call): View options prices across DeFi platforms in unified view
 - [Live Arbitrage Updates](https://discord.gg/Qr7cgTru): Join our Discord channel for real-time options arbitrage opportunities
+- [Dashboard](https://app.grix.finance/orders?positionsTableType=Positions&ordersTableType=LiveOrders): View open positions and live orders
 
 ## 2. Developer Resources
 
@@ -16,4 +17,4 @@
 
 ## 3. Community & Support
 
-- [Twitter](https://twitter.com/GrixFinance): Follow @GrixFinance for updates and announcements
+- [X](https://x.com/GrixFinance): Follow @GrixFinance for updates and announcements
