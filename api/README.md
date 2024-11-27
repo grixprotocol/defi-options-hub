@@ -8,7 +8,7 @@ The Grix API provides developers with tools to integrate DeFi options info and t
 
 ## Getting Started
 
-1. **API Documentation**: Explore our [API Documentation](https://external-api-dev.grix.finance/docs) for detailed specifications and request examples.
+1. **API Documentation**: Explore our [API Documentation](https://grix.apidocumentation.com) for detailed specifications and request examples.
 
 2. **API Key**: [Register here](https://docs.google.com/forms/d/e/1FAIpQLSd_r86A9kCceEaShWnzuy5CIAblyHgMtegR8hc0U-PN8ZqRkQ/viewform) to obtain your API key.
 
@@ -24,10 +24,10 @@ We are constantly working to enhance the Grix API. Here are some features you ca
 ## Disclaimer
 
 Please note that this is the first phase of our API. While we strive for stability and reliability, it should be used at your own risk. We appreciate your feedback to help us improve.
-
+s
 ## Support
 
-For technical support or inquiries, please join our Discord's [dev-channel](https://discord.gg/ku5eKPS2).
+For technical support or inquiries, please join our Discord's [dev-channel](https://discord.gg/eaAwyhhp47).
 
 ---
 
