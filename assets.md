@@ -36,3 +36,4 @@
 - 🐦 [**Twitter/X**](https://x.com/GrixFinance)
   - Latest updates and announcements
   - Join our growing community
+- 💬 [**Discord**](https://t.co/YPGAhKlcUV)
