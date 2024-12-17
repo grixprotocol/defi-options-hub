@@ -15,6 +15,12 @@
 - 📱 [**Dashboard**](https://app.grix.finance/orders?positionsTableType=Positions&ordersTableType=LiveOrders)
   - Track your open positions
   - Monitor live orders in real-time
+- 💯 [**Points Campaign**](https://app.grix.finance/points)
+  - Earn and track points
+  - Get rewarded for trading
+- 🤖 [**Chatbot**](https://app.grix.finance/chat)
+  - AI agent chatbot that can recommend options
+  - Can view current market status and prices
 
 ## 👨‍💻 2. Developer Resources
 
